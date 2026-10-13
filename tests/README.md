@@ -6,7 +6,9 @@
 
 1. Frontmatter parses and contains `name` + `description`.
 2. `name`: 1–64 chars, `[a-z0-9-]`, no leading/trailing/consecutive hyphens, matches the directory name.
-3. `description`: non-empty, ≤ 1024 chars.
+3. `description`: non-empty, ≤ 1024 chars. Must be YAML-quoted if it contains
+   `: ` (colon+space) — strict parsers (e.g. the `skills` CLI) reject unquoted
+   colons in plain scalars and silently skip the skill.
 4. Body non-empty; warns when > 500 lines (progressive disclosure).
 5. File references are relative, safe (no `..` escapes), and resolve to existing files.
 6. No accidental secrets (API keys, tokens, private keys).
