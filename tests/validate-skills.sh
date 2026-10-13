@@ -66,20 +66,20 @@ def warn(skill, msg): warnings.append(f"[{skill}] {msg}")
 
 def parse_frontmatter(text):
     if not text.startswith('---'):
-        return None, 'missing opening --- frontmatter delimiter'
+        return None, None, 'missing opening --- frontmatter delimiter'
     end = text.find('\n---', 3)
     if end == -1:
-        return None, 'missing closing --- frontmatter delimiter'
+        return None, None, 'missing closing --- frontmatter delimiter'
     raw = text[3:end].strip('\n')
     fm = {}
     for line in raw.splitlines():
         if not line.strip() or line.lstrip().startswith('#'):
             continue
         if ':' not in line:
-            return None, f'malformed frontmatter line: {line!r}'
+            return None, None, f'malformed frontmatter line: {line!r}'
         k, v = line.split(':', 1)
         fm[k.strip()] = v.strip().strip('"').strip("'")
-    return fm, None
+    return fm, raw, None
 
 def check_skill(skill_dir):
     skill = os.path.basename(skill_dir)
@@ -89,10 +89,23 @@ def check_skill(skill_dir):
         return
     with open(path, encoding='utf-8') as f:
         text = f.read()
-    fm, fm_err = parse_frontmatter(text)
+    fm, raw, fm_err = parse_frontmatter(text)
     if fm_err:
         err(skill, f'frontmatter: {fm_err}')
         return
+    # Strict-YAML compatibility: parsers used by the skills CLI and similar
+    # tooling reject an unquoted ': ' (colon+space) inside a plain scalar
+    # ("nested mappings are not allowed in compact mappings"). Quote the value.
+    for line in raw.splitlines():
+        s = line.strip()
+        if not s or s.startswith('#') or ':' not in s:
+            continue
+        k, v = s.split(':', 1)
+        v = v.strip()
+        if v and v[0] not in ('"', "'") and ': ' in v:
+            err(skill, f"strict-YAML risk: unquoted ': ' in frontmatter "
+                       f"{k.strip()!r} — quote the value or strict parsers "
+                       f"will reject this skill")
     name = fm.get('name', '')
     desc = fm.get('description', '')
     if not name:
