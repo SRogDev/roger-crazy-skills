@@ -11,12 +11,12 @@ A public collection of reusable [Agent Skills](https://agentskills.io/specificat
 | Skill | What it does | Crazy Thing | Status |
 |---|---|---|---|
 | `write-crazy-skill` | Turns a natural-language request into a complete, portable Agent Skill | Crazy Thing Card: every mechanism ships as a falsifiable hypothesis with a validation test — creativity becomes testable | ✅ ready |
-| `design-thief` | Reproduces or improves a target visual design from references | Visual Delta Loop: inspect → rank discrepancies by visual impact → fix → reinspect | 🚧 in progress |
-| `intention-verification` | Checks whether a deliverable fulfills the original intent, not just looks complete | Missing-Intent Detector: maps requirements to evidence, flags superficial compliance | 🚧 in progress |
-| `cost-guard` | Finds and prevents unjustified costs in agent workflows and operations | Cost Amplification Traps: traces retries, fan-out, polling loops that multiply spend | 🚧 in progress |
-| `spec-compiler` | Compiles natural-language intentions into precise, executable specifications | Intent Compression Without Loss: traceable, ambiguity-free specs another agent can build from | 🚧 in progress |
-| `boundary-breaker` | Identifies and tests trust boundaries and assumptions in systems and integrations | Trust-Boundary Inversion: adversarial scenarios scoped, authorized, and proportionate | 🚧 in progress |
-| `capability-scout` | Discovers existing capabilities before building from scratch | Unknown-Unknown Search: decomposes the goal, searches tools, libraries, APIs, MCP servers, patterns | 🚧 in progress |
+| `design-thief` | Reproduces or improves a target visual design from references | Visual Delta Loop: inspect → rank discrepancies by visual impact → fix → reinspect | ✅ ready |
+| `intention-verification` | Checks whether a deliverable fulfills the original intent, not just looks complete | Missing-Intent Detector: maps requirements to evidence, flags superficial compliance | ✅ ready |
+| `cost-guard` | Finds and prevents unjustified costs in agent workflows and operations | Cost Amplification Traps: traces retries, fan-out, polling loops that multiply spend | ✅ ready |
+| `spec-compiler` | Compiles natural-language intentions into precise, executable specifications | Intent Compression Without Loss: traceable, ambiguity-free specs another agent can build from | ✅ ready |
+| `boundary-breaker` | Identifies and tests trust boundaries and assumptions in systems and integrations | Trust-Boundary Inversion: adversarial scenarios scoped, authorized, and proportionate | ✅ ready |
+| `capability-scout` | Discovers existing capabilities before building from scratch | Unknown-Unknown Search: decomposes the goal, searches tools, libraries, APIs, MCP servers, patterns | ✅ ready |
 
 Each skill is model-invoked (fires autonomously via its `description`) and portable across agents that support the Agent Skills format.
 
