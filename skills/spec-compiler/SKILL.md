@@ -1,6 +1,6 @@
 ---
 name: spec-compiler
-description: Compile ideas, notes, and plans into precise, traceable specifications for agents and implementation teams. Use when the user says "turn this idea into a spec", "write a build plan from my notes", "make this precise enough to hand to a developer", or "compile this plan". Compresses intent without loss: every requirement is traceable to its source and labeled mandatory, recommended, assumed, or unresolved. Spec-only; never implements.
+description: "Compile ideas, notes, and plans into precise, traceable specifications for agents and implementation teams. Use when the user says \"turn this idea into a spec\", \"write a build plan from my notes\", \"make this precise enough to hand to a developer\", or \"compile this plan\". Compresses intent without loss: every requirement is traceable to its source and labeled mandatory, recommended, assumed, or unresolved. Spec-only; never implements."
 ---
 
 # spec-compiler

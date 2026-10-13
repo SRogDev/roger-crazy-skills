@@ -28,7 +28,9 @@ Individual skills live under `skills/<name>/` — copy the directory into your a
 npx skills add SRogDev/roger-crazy-skills
 ```
 
-> The `npx skills add` flow is the intended installation method; single-skill installs follow the same pattern when supported by your tooling. Verified install instructions will replace this note once tested against current tooling.
+> Verified with the `skills` CLI: `npx skills add SRogDev/roger-crazy-skills --list`
+> recognizes the repository and parses all 7 skills. Install one skill with
+> `npx skills add SRogDev/roger-crazy-skills --skill <name>`.
 
 ## The methodology
 

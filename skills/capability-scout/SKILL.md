@@ -1,6 +1,6 @@
 ---
 name: capability-scout
-description: Find existing capabilities before building from scratch: installed skills and tools, libraries, MCP servers, APIs, SDKs, services, and techniques. Use when the user asks "is there a tool or library for X" or "find existing solutions before we build". Also fires when the agent itself has a clear goal but no reliable implementation path and building from scratch looks premature. Sweeps environment-resident capabilities first, evaluates fit, license, security, and effort, and recommends with evidence and trade-offs.
+description: "Find existing capabilities before building from scratch: installed skills and tools, libraries, MCP servers, APIs, SDKs, services, and techniques. Use when the user asks \"is there a tool or library for X\" or \"find existing solutions before we build\". Also fires when the agent itself has a clear goal but no reliable implementation path and building from scratch looks premature. Sweeps environment-resident capabilities first, evaluates fit, license, security, and effort, and recommends with evidence and trade-offs."
 ---
 
 # capability-scout
