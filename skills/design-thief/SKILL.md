@@ -1,6 +1,6 @@
 ---
 name: design-thief
-description: Match a target visual design: reproduce or improve a UI from supplied references (screenshots, mockups, descriptions) using a budgeted inspect → fix → re-inspect Visual Delta Loop. Use when the task says "match this design", "reproduce this UI from the mockup", "improve this page to look like X", or "close the visual gap with the reference". Do not use for pure code refactors, design-system authoring from scratch, or "make it prettier" with no reference or direction.
+description: "Match a target visual design: reproduce or improve a UI from supplied references (screenshots, mockups, descriptions) using a budgeted inspect → fix → re-inspect Visual Delta Loop. Use when the task says \"match this design\", \"reproduce this UI from the mockup\", \"improve this page to look like X\", or \"close the visual gap with the reference\". Do not use for pure code refactors, design-system authoring from scratch, or \"make it prettier\" with no reference or direction."
 ---
 
 # design-thief

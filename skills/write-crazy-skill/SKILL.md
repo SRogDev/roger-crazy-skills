@@ -1,6 +1,6 @@
 ---
 name: write-crazy-skill
-description: Design and build complete, portable Agent Skills from a natural-language request. Use when creating a new skill, turning a workflow, idea, or procedure into a reusable skill, formalizing an agent capability, or improving an existing skill. Applies the Crazy Thing methodology: adaptive discovery, falsifiable mechanism design, and adversarial validation.
+description: "Design and build complete, portable Agent Skills from a natural-language request. Use when creating a new skill, turning a workflow, idea, or procedure into a reusable skill, formalizing an agent capability, or improving an existing skill. Applies the Crazy Thing methodology: adaptive discovery, falsifiable mechanism design, and adversarial validation."
 ---
 
 # write-crazy-skill
