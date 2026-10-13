@@ -14,10 +14,24 @@
 
 ## Doing
 
-- Six remaining public skills (`design-thief`, `intention-verification`, `cost-guard`,
-  `spec-compiler`, `boundary-breaker`, `capability-scout`) — built with the
-  `write-crazy-skill` methodology.
 - `crazy-behavioral` integration into SkillGen (separate repo, separate PR).
+- Phase 5 comparative evaluation: Write Crazy Skill methodology vs. baseline on a
+  small representative subset.
+- Verify the `npx skills add SRogDev/roger-crazy-skills` install flow against current tooling.
+
+## Shipped 2026-10-13
+
+All seven public skills built with the `write-crazy-skill` methodology and merged
+as individual PRs (#1–#6 + docs):
+- `write-crazy-skill` — Crazy Thing Card methodology (foundation)
+- `design-thief` — Visual Delta Loop
+- `intention-verification` — Missing-Intent Detector
+- `cost-guard` — Cost Amplification Traps
+- `spec-compiler` — Intent Compression Without Loss
+- `boundary-breaker` — Trust-Boundary Inversion
+- `capability-scout` — Unknown-Unknown Search
+Each ships with behavioral test walkthroughs (`tests/behavioral/`) and honest
+evidence labels; comparative superiority claims remain hypotheses.
 
 ## Next
 
