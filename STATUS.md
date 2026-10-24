@@ -12,6 +12,12 @@
   `writing-for-agents` + `SKILL-MECHANICS.md` (successor of `writing-great-skills`),
   Anthropic `anthropics/skills` template.
 
+- 2026-10-23: `math-anatomy` v1 built on local branch `feat/math-anatomy` —
+  Math 2.0 learning pieces (manipulable figure + guided path) gated by the
+  Definition Gate mechanism; two pilot pieces built (gradient descent,
+  linear algebra) and a no-skill baseline comparison run for the
+  behavioral test doc. PR pending.
+
 ## Doing
 
 - `crazy-behavioral` integration into SkillGen (separate repo, separate PR).

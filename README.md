@@ -17,6 +17,7 @@ A public collection of reusable [Agent Skills](https://agentskills.io/specificat
 | `spec-compiler` | Compiles natural-language intentions into precise, executable specifications | Intent Compression Without Loss: traceable, ambiguity-free specs another agent can build from | ✅ ready |
 | `boundary-breaker` | Identifies and tests trust boundaries and assumptions in systems and integrations | Trust-Boundary Inversion: adversarial scenarios scoped, authorized, and proportionate | ✅ ready |
 | `capability-scout` | Discovers existing capabilities before building from scratch | Unknown-Unknown Search: decomposes the goal, searches tools, libraries, APIs, MCP servers, patterns | ✅ ready |
+| `math-anatomy` | Turns a math concept into an intuition-first learning piece (one manipulable figure + guided path) for Math 2.0 — understanding, not hand computation | Definition Gate: no definition or formula may appear before the learner has manipulated the concept, committed a prediction, and broken it on purpose — enforced by a mechanical audit | ✅ ready |
 
 Each skill is model-invoked (fires autonomously via its `description`) and portable across agents that support the Agent Skills format.
 
@@ -29,12 +30,12 @@ npx skills add SRogDev/roger-crazy-skills
 ```
 
 > Verified with the `skills` CLI: `npx skills add SRogDev/roger-crazy-skills --list`
-> recognizes the repository and parses all 7 skills. Install one skill with
+> recognizes the repository and parses all 8 skills. Install one skill with
 > `npx skills add SRogDev/roger-crazy-skills --skill <name>`.
 
 ## The methodology
 
-All seven skills are built with `write-crazy-skill` (in this repo): adaptive discovery for specified, partial, and open-ended requests; a falsifiable Crazy Thing Card before any building; engineering of triggers, steering, failure handling, and pruning; adversarial validation (the skill is attacked — positive/negative activation, edge cases, comparison against working without it) before it ships.
+All eight skills are built with `write-crazy-skill` (in this repo): adaptive discovery for specified, partial, and open-ended requests; a falsifiable Crazy Thing Card before any building; engineering of triggers, steering, failure handling, and pruning; adversarial validation (the skill is attacked — positive/negative activation, edge cases, comparison against working without it) before it ships.
 
 ## Validation
 
