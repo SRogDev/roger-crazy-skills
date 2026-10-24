@@ -208,6 +208,9 @@ delivery note:
 
 1. **Order:** the first definition/formula/notation block appears after
    at least one manipulation instruction and one committed prediction.
+   (Instrument readouts may carry notation as dial labels from beat 1 —
+   |∇f| on a gauge, the live entries of a matrix — but every such label
+   must be decoded in beat 4. A dial is not a definition.)
 2. **Reachability:** every named trap corresponds to a figure state the
    learner can actually reach with the shipped controls.
 3. **Zero drill:** no instruction asks the learner to compute anything by
